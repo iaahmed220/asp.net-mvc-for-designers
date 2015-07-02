@@ -1,0 +1,24 @@
+﻿@model Store.ViewModels.ShoppingIndexViewModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Shopping</h2>
+<p>Welcome, @Model.Customer.FirstName @Model.Customer.LastName</p>
+<p>Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.</p>
+
+<div class="row products">
+
+    @foreach (var product in Model.Products)
+    {
+        <div class="col-xs-6 product">
+            <div class="well">
+                <h4>@product.ProductName</h4>
+                <p><strong>@product.ProductPrice</strong></p>
+                <p>@product.ProductDescription</p>
+                <a class="btn btn-primary" href="#">Learn More</a>
+            </div>
+        </div>
+    }
+
+</div>

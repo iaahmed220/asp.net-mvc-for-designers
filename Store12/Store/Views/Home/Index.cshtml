@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h2>Welcome to My Store</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-6">
+            <h4>Column 1</h4>
+            <p>@Html.ActionLink("Tincidunt integer eu augue", "Index", "Shopping") augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.</p>
+        </div>
+        <div class="col-xs-6">
+            <h4>Column 2</h4>
+            <p><a href="@Url.Action("Index", "Shopping")">Tincidunt integer eu augue augue</a> nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.</p>
+        </div>
+    </div>
+</div>
